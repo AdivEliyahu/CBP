@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  server:
+    image: "server"
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "5000:5000"
+    deploy:
+      mode: replicated
+      replicas: 1
+
+  client:
+    image: "client"
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    deploy:
+      mode: replicated
+      replicas: 1
+    stdin_open: true

@@ -1,0 +1,13 @@
+Flask>=3.0.3
+flask_sqlalchemy>=3.1.1
+SQLAlchemy>=2.0.31
+PyMySQL>=1.1.1
+flask_cors>=4.0.1
+pytest>=8.2.2
+python-dotenv>=1.0.1 
+cryptography>=42.0.8
+flask-jwt-extended>=4.6.0 
+bcrypt>=4.1.0
+sendgrid>=6.11.0
+Flask-Mail>=0.10.0
+sqlalchemy_utils>=0.41.2
